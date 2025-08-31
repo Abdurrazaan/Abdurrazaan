@@ -3,113 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Razaan Digital - Portofolio Kreatif</title>
-    
-    <link rel="stylesheet" href="style.css">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Razaan Digital - Portofolio Satu Halaman</title>
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
-
     <header>
         <div class="container">
-            <a href="#" class="brand">Razaan Digital</a>
+            <a href="#hero" class="brand">Razaan Digital</a>
             <nav class="nav-links">
                 <ul>
                     <li><a href="#hero">Beranda</a></li>
-                    <li><a href="#about">Tentang</a></li>
-                    <li><a href="#services">Layanan</a></li>
                     <li><a href="#portfolio">Portofolio</a></li>
                     <li><a href="#contact">Kontak</a></li>
                 </ul>
             </nav>
-            <div class="hamburger">
-                <i class="fas fa-bars"></i>
+            <div class="header-controls">
+                <button id="darkModeToggle" class="theme-toggle"><i class="fas fa-moon"></i></button>
+                <div class="hamburger"><i class="fas fa-bars"></i></div>
             </div>
         </div>
     </header>
 
-    <section id="hero">
-        <div class="hero-content">
-            <h1>Solusi Digital Kreatif & Inovatif</h1>
-            <p>Membantu bisnis Anda bertumbuh di era digital dengan desain menawan dan fungsionalitas andal.</p>
-            <a href="#portfolio" class="cta-button">Lihat Karya Kami</a>
-        </div>
-    </section>
-
-    <section id="about" class="container">
-        <h2>Tentang Razaan Digital</h2>
-        <p>
-            Kami adalah agensi digital yang bersemangat dalam menciptakan solusi digital yang berdampak. Dari desain website yang responsif hingga strategi branding yang kuat, tim kami berdedikasi untuk memberikan hasil terbaik yang tidak hanya terlihat bagus, tetapi juga mencapai tujuan bisnis Anda.
-        </p>
-    </section>
-
-    <section id="services" class="container">
-        <h2>Layanan Kami</h2>
-        <div class="services-grid">
-            <div class="service-card">
-                <i class="fas fa-palette"></i>
-                <h3>Desain Grafis & Branding</h3>
-                <p>Membangun identitas visual yang kuat dan mudah dikenali untuk merek Anda.</p>
+    <main>
+        <section id="hero">
+            <div class="container hero-content">
+                <h1 class="animate-on-scroll">Membentuk Masa Depan Digital Anda</h1>
+                <p class="animate-on-scroll">Kami mengubah ide brilian menjadi pengalaman digital yang luar biasa melalui desain, kode, dan strategi.</p>
+                <a href="#portfolio" class="cta-button animate-on-scroll">Jelajahi Proyek Kami</a>
             </div>
-            <div class="service-card">
-                <i class="fas fa-code"></i>
-                <h3>Pengembangan Website</h3>
-                <p>Membuat website modern, cepat, dan ramah seluler untuk kehadiran online Anda.</p>
-            </div>
-            <div class="service-card">
-                <i class="fas fa-bullhorn"></i>
-                <h3>Digital Marketing</h3>
-                <p>Meningkatkan jangkauan pasar dan interaksi pelanggan melalui strategi digital.</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="portfolio" class="container">
-        <h2>Portofolio Proyek</h2>
-        <div class="portfolio-grid">
-            <div class="portfolio-item">
-                <img src="https://via.placeholder.com/400x300.png?text=Proyek+Satu" alt="Proyek 1">
-                <div class="portfolio-info">
-                    <h3>Website Perusahaan</h3>
-                    <p>Desain ulang website untuk klien korporat.</p>
+        <section id="services" class="container">
+            <h2 class="section-title animate-on-scroll">Layanan Unggulan</h2>
+            <div class="services-grid">
+                <div class="service-card animate-on-scroll">
+                    <i class="fas fa-vector-square"></i>
+                    <h3>UI/UX Design</h3>
+                    <p>Menciptakan antarmuka yang intuitif dan menarik untuk kepuasan pengguna maksimal.</p>
+                </div>
+                <div class="service-card animate-on-scroll">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Web Development</h3>
+                    <p>Membangun situs web yang cepat, aman, dan responsif dengan teknologi terkini.</p>
+                </div>
+                <div class="service-card animate-on-scroll">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>SEO & Marketing</h3>
+                    <p>Meningkatkan visibilitas online Anda untuk menjangkau audiens yang lebih luas.</p>
                 </div>
             </div>
-            <div class="portfolio-item">
-                <img src="https://via.placeholder.com/400x300.png?text=Proyek+Dua" alt="Proyek 2">
-                <div class="portfolio-info">
-                    <h3>Aplikasi Mobile</h3>
-                    <p>UI/UX Design untuk aplikasi e-commerce.</p>
+        </section>
+        
+        <section id="portfolio" class="container">
+            <h2 class="section-title animate-on-scroll">Karya Terbaik Kami</h2>
+            <div id="portfolio-filter" class="animate-on-scroll">
+                <button class="filter-btn active" data-filter="all">Semua</button>
+                <button class="filter-btn" data-filter="web">Web Design</button>
+                <button class="filter-btn" data-filter="branding">Branding</button>
+                <button class="filter-btn" data-filter="marketing">Marketing</button>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item animate-on-scroll" data-category="web">
+                    <img src="https://via.placeholder.com/400x300.png?text=Web+Perusahaan" alt="Proyek Web">
+                    <div class="portfolio-overlay"><h3>Website Korporat</h3><p>Web Design</p></div>
+                </div>
+                 <div class="portfolio-item animate-on-scroll" data-category="branding">
+                    <img src="https://via.placeholder.com/400x300.png?text=Branding+Kopi" alt="Proyek Branding">
+                    <div class="portfolio-overlay"><h3>Logo Kopi Lokal</h3><p>Branding</p></div>
+                </div>
+                <div class="portfolio-item animate-on-scroll" data-category="web">
+                    <img src="https://via.placeholder.com/400x300.png?text=Toko+Online" alt="Proyek E-commerce">
+                    <div class="portfolio-overlay"><h3>Toko Online Fashion</h3><p>Web Design</p></div>
+                </div>
+                <div class="portfolio-item animate-on-scroll" data-category="marketing">
+                    <img src="https://via.placeholder.com/400x300.png?text=Kampanye+Sosmed" alt="Proyek Marketing">
+                    <div class="portfolio-overlay"><h3>Kampanye Media Sosial</h3><p>Marketing</p></div>
                 </div>
             </div>
-            <div class="portfolio-item">
-                <img src="https://via.placeholder.com/400x300.png?text=Proyek+Tiga" alt="Proyek 3">
-                <div class="portfolio-info">
-                    <h3>Kampanye Branding</h3>
-                    <p>Pembuatan logo dan materi promosi.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="contact" class="container">
-        <h2>Hubungi Kami</h2>
-        <p>Siap untuk memulai proyek Anda? Hubungi kami melalui salah satu platform di bawah ini.</p>
-        <div class="contact-links">
-            <a href="mailto:kontak@razaandigital.com" target="_blank"><i class="fas fa-envelope"></i> kontak@razaandigital.com</a>
-            <a href="#" target="_blank"><i class="fab fa-instagram"></i> @razaandigital</a>
-            <a href="#" target="_blank"><i class="fab fa-linkedin"></i> Razaan Digital</a>
-        </div>
-    </section>
+        <section id="contact" class="container">
+            <h2 class="section-title animate-on-scroll">Mari Berkolaborasi</h2>
+            <p class="subtitle animate-on-scroll">Kami ingin mendengar ide Anda. Hubungi kami melalui formulir di bawah ini.</p>
+            <form id="contactForm" class="contact-form animate-on-scroll">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Nama Anda" required>
+                    <small class="error-message"></small>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Email Anda" required>
+                    <small class="error-message"></small>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" rows="5" placeholder="Pesan Anda" required></textarea>
+                    <small class="error-message"></small>
+                </div>
+                <button type="submit" class="cta-button">Kirim Pesan</button>
+                <div id="form-status"></div>
+            </form>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2025 Razaan Digital. Hak Cipta Dilindungi.</p>
+        <div class="container">
+            <p>&copy; 2025 Razaan Digital. Semua Hak Dilindungi.</p>
+        </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
